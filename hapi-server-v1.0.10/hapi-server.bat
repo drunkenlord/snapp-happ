@@ -1,1 +1,0 @@
-cmd /k "bin\node" server.js %*
