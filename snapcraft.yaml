@@ -1,23 +1,21 @@
-name: hapi-combo8
+name: hapi-combo9
 base: core18
 version: '1.0.11'
 summary: Hapi Server Linux-x64
 description: |
   Hapi Server Linux-x64
-grade: devel
-confinement: devmode
+grade: stable
+confinement: strict
 architectures:
   - build-on: amd64
 
 apps:
   curl:
     command: curl
-  # bash:
-  #   command: bash
   hapis1:
-     command: /snap/hapi-combo8/current/hapi-server-v1.0.10/bin/node /snap/hapi-combo8/current/hapi-server-v1.0.10/test/server-test.js
+     command: /snap/hapi-combo9/current/hapi-server-v1.0.10/bin/node /snap/hapi-combo9/current/hapi-server-v1.0.10/test/server-test.js
   hapis-server:
-    command: /snap/hapi-combo8/current/hapi-server-v1.0.10/hapi-server --logdir="/home/hapi_logs" --metadata_dir="/home/hapi_metadata" 
+    command: /snap/hapi-combo9/current/hapi-server-v1.0.10/hapi-server --logdir="/home/hapi_logs" --metadata_dir="/home/hapi_metadata" 
 
   
 parts:
