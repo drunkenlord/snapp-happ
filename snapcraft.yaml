@@ -15,7 +15,7 @@ apps:
   hapis1:
      command: sudo /snap/hapi-combo11/current/hapi-server-v1.0.10/bin/node /snap/hapi-combo11/current/hapi-server-v1.0.10/test/server-test.js
   hapis-server:
-    command: sudo /snap/hapi-combo11/current/hapi-server-v1.0.10/hapi-server --logdir="/home/hapi_logs" --metadata_dir="/home/hapi_metadata" 
+    command: sudo /snap/hapi-combo11/current/hapi-server-v1.0.10/hapi-server --logdir="$SNAP_USER_DATA" --metadata_dir="$SNAP_USER_DATA" 
 
   
 parts:
