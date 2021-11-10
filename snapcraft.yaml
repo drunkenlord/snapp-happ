@@ -13,9 +13,9 @@ apps:
   curl:
     command: curl
   hapis1:
-     command: /snap/hapi-combo11/current/hapi-server-v1.0.10/bin/node /snap/hapi-combo11/current/hapi-server-v1.0.10/test/server-test.js
+     command: hapi-server-v1.0.10/bin/node hapi-server-v1.0.10/test/server-test.js
   hapis-server:
-    command: /snap/hapi-combo11/current/hapi-server-v1.0.10/hapi-server --logdir="/var/snap/hapi-combo11/current" --metadata_dir="/var/snap/hapi-combo11/current" 
+    command: hapi-server-v1.0.10/hapi-server --logdir="/var/snap/hapi-combo11/current" --metadata_dir="/var/snap/hapi-combo11/current" 
 
 
   
