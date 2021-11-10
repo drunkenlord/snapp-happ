@@ -15,7 +15,7 @@ apps:
   hapis1:
      command: /snap/hapi-combo11/current/hapi-server-v1.0.10/bin/node /snap/hapi-combo11/current/hapi-server-v1.0.10/test/server-test.js
   hapis-server:
-    command: sudo /snap/hapi-combo11/current/hapi-server-v1.0.10/hapi-server --logdir="/var/snap/hapi-combo11/current" --metadata_dir="/var/snap/hapi-combo11/current" 
+    command: /snap/hapi-combo11/current/hapi-server-v1.0.10/hapi-server --logdir="/var/snap/hapi-combo11/current" --metadata_dir="/var/snap/hapi-combo11/current" 
 
 
   
