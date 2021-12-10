@@ -1,11 +1,11 @@
-name: hapi-combo11
+name: hapi-new-2
 base: core18
 version: '1.0.11'
 summary: Hapi Server Linux-x64
 description: |
   Hapi Server Linux-x64
-grade: stable
-confinement: strict
+grade: devel
+confinement: devmode
 architectures:
   - build-on: amd64
 
@@ -13,22 +13,19 @@ apps:
   curl:
     command: curl
   hapis1:
-     command: hapi-server-v1.0.10/bin/node hapi-server-v1.0.10/test/server-test.js
+     command: /snap/hapi-new-1/current/hapi-server-v1.0.11/bin/node hapi-server-v1.0.11/test/server-test.js
   hapis-server:
-    command: hapi-server-v1.0.10/hapi-server --logdir="/var/snap/hapi-combo11/current" --metadata_dir="/var/snap/hapi-combo11/current" 
+    command: /snap/hapi-new-1/current/hapi-server-v1.0.11/hapi-server --logdir="/home" --metadir="/home" 
 
 
   
 parts:
   hapis1:
-    source: https://github.com/drunkenlord/snapp-happ/releases/download/v1.0.0.1/hapi-server-v1.0.10.tar.gz
+    source: https://github.com/drunkenlord/snapp-happ/releases/download/v1.0.11/hapi-server-v1.0.11.tgz
     plugin: dump
   hapis-server:
-    source: https://github.com/drunkenlord/snapp-happ/releases/download/v1.0.0.1/hapi-server-v1.0.10.tar.gz
+    source: https://github.com/drunkenlord/snapp-happ/releases/download/v1.0.11/hapi-server-v1.0.11.tgz
     plugin: dump
   curl:
     source: http://curl.haxx.se/download/curl-7.45.0.tar.bz2
     plugin: autotools
-
-
-#####
