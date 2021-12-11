@@ -13,7 +13,7 @@ apps:
   curl:
     command: curl
   hapis1:
-     command: /snap/hapi-new-2/current/hapi-server-v1.0.11/bin/node hapi-server-v1.0.11/test/server-test.js
+     command: /snap/hapi-new-2/current/hapi-server-v1.0.11/bin/node /snap/hapi-new-2/current/hapi-server-v1.0.11/test/server-test.js
   hapis-server:
     command: /snap/hapi-new-2/current/hapi-server-v1.0.11/hapi-server --logdir="/home" --metadir="/home" 
 
