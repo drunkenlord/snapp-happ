@@ -1,4 +1,4 @@
-name: hapi-new-5
+name: hapi-new-6
 base: core18
 version: '1.0.11'
 summary: Hapi Server Linux-x64
@@ -15,7 +15,7 @@ apps:
   hapis1:
      command: /snap/hapi-new-2/current/hapi-server-v1.0.11/bin/node /snap/hapi-new-2/current/hapi-server-v1.0.11/test/server-test.js --logdir="/home" --metadir="/home"
   hapis-server:
-    command: /snap/hapi-new-2/current/hapi-server-v1.0.11/hapi-server --logdir="/home" --metadir="/home" 
+    command: /snap/hapi-new-2/current/hapi-server-v1.0.11/hapi-server --logdir="/home/log" --metadir="/home/meta" 
 
 
   
