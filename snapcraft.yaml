@@ -1,4 +1,4 @@
-name: hapi-new-11
+name: hapi-new-12
 base: core18
 version: '1.0.11'
 summary: Hapi Server Linux-x64
@@ -13,9 +13,9 @@ apps:
   curl:
     command: curl
   hapis1:
-     command: /snap/hapi-new-11/current/hapi-server-v1.0.11/bin/node /snap/hapi-new-11/current/hapi-server-v1.0.11/test/server-test.js --logdir="/home/log" --metadir="/home/meta"
+     command: /snap/hapi-new-12/current/hapi-server-v1.0.11/bin/node /snap/hapi-new-12/current/hapi-server-v1.0.11/test/server-test.js --logdir="/home/log" --metadir="/home/meta"
   hapis-server:
-    command: /snap/hapi-new-11/current/hapi-server-v1.0.11/hapi-server --logdir="/home/log" --metadir="/home/meta" 
+    command: /snap/hapi-new-12/current/hapi-server-v1.0.11/hapi-server --logdir="/home/log" --metadir="/home/meta" 
 
 
   
